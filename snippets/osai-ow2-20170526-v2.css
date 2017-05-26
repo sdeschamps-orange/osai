@@ -1,0 +1,42 @@
+
+/*H1 is over-specified, so we have to replicate here*/
+  #document-title H1 {
+    color: #E95D0F;
+  }
+
+/*Headings*/
+  H1, H2, H3, H4, H5, H6 {
+    color: #1B4F66;
+    font-weight: bold;
+  }
+
+/*Links in the #xwikicontent section */
+  #xwikicontent a:not(.btn):link, #xwikicontent a:not(.btn):visited {
+    color: #1B4F66;
+    border-bottom:1px solid #E95D0F;
+    font-weight: bold;
+  }
+  #xwikicontent a:not(.btn):hover, #xwikicontent a:not(.btn):focus, #xwikicontent a:not(.btn):active {
+    text-decoration: none;
+    border-bottom:1px solid #FF6600;
+  }
+
+/*Other links we don't want to decorate:
+ - video thumbnails
+ - links disguised as buttons with .buttonwrapper wrappers
+ - links disguised as buttons with .btn class
+  */
+  #xwikicontent .youtubemacrothumbnail a:link,
+  #xwikicontent .youtubemacrothumbnail a:visited,
+  #xwikicontent .youtubemacrothumbnail a:hover, 
+  #xwikicontent .youtubemacrothumbnail a:focus,
+  #xwikicontent .youtubemacrothumbnail a:active,
+  #xwikicontent .buttonwrapper a:link,
+  #xwikicontent .buttonwrapper a:visited,
+  #xwikicontent .buttonwrapper a:hover,
+  #xwikicontent .buttonwrapper a:focus,
+  #xwikicontent .buttonwrapper a:active {
+    border-bottom: none;
+    color:inherit;
+
+  }
